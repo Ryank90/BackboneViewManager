@@ -1,7 +1,7 @@
 backbone-view-manager
 =====================
 
-Manager to help against zombie views
+A View Manager to help remove those sodding zombie views, found in the darkest parts of your SPA.
 
 How to use
 =====================
