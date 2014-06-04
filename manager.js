@@ -1,8 +1,9 @@
 // require set
 define([
-    'jquery', 
-    'backbone'
-], function ($, Backbone) {
+    'jquery',
+    'backbone',
+    'underscore'
+], function ($, Backbone, _) {
    
    // define the manager to manage view states
     window.ViewManager = window.ViewManager || {};
