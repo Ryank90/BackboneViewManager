@@ -13,18 +13,22 @@ A typical rendering of a view would look like this:
 
 How to initiate the view manager
 
-    demoView = ViewsManager.ViewCreate('demoView', function () {
+    demoView = ViewManager.ViewCreate('demoView', function () {
         return new DemoView({...});
     });
     this.$el.append(demoView.render().el);
     
 Or re-use existing view
 
-    demoView = ViewsManager.ViewReuse('demoView', function () {
+    demoView = ViewManager.ViewReuse('demoView', function () {
         return new DemoView({...});
     });
     this.$el.append(demoView.render().el);
     
 Kill a view
 
-    ViewsManager.ViewClose('demoView');
+    ViewManager.ViewClose('demoView');
+
+View your initialized view in the DOM
+
+    ViewManager.Views();
